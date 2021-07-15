@@ -1,8 +1,8 @@
 bl_info = {
 	"name" : "Align UV Island",
 	"author" : "SpdB3d",
-	"version" : (1, 0, 6),
-	"blender" : (2, 82, 0),
+	"version" : (1, 0, 7),
+	"blender" : (2, 90, 0),
 	"description" : "Align UV Islands by selecting one edge",
 	"category" : "UV",}
 
@@ -25,12 +25,12 @@ from bpy.types import (Panel,
 
 class MySettings(PropertyGroup):
 
-	my_bool = BoolProperty(
+	my_bool : BoolProperty(
 		name="Rotate",
 		description="Rotate islands when packing",
 		default = False
 		)
-	my_float = FloatProperty(
+	my_float : FloatProperty(
 		name="Margin",
 		description="Specify the margin when packing the islands",
 		default = 0.0 ,
